@@ -10,7 +10,7 @@ namespace Advent_Of_Code
     {
         static async Task Main(string[] args)
         {
-            string path = "C:/Users/gstep/OneDrive - Hills Road Sixth Form College/Computer Science/Coding Side/Fun Stuff/Hello.txt";
+            string path = "inputFile";
             string input = "";
 
             using (var sr = new StreamReader(path))
