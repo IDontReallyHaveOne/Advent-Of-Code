@@ -1,0 +1,156 @@
+using System;
+using System.Net.Http;
+using System.Net;
+using System.ComponentModel;
+using System.Runtime.ExceptionServices;
+
+namespace Advent_Of_Code
+{
+    internal class Program
+    {
+        static async Task Main(string[] args)
+        {
+            string path = "C:/Users/gstep/OneDrive - Hills Road Sixth Form College/Computer Science/Coding Side/Fun Stuff/Hello.txt";
+            string input = "";
+
+            using (var sr = new StreamReader(path))
+            {
+                input = sr.ReadToEnd();
+            }
+
+            //Start code here
+
+            string[] split = input.Split('\n');
+
+            bool reachedSplit = false;
+            List<string> initial = new List<string>();
+            List<string> changes = new List<string>();
+
+            foreach (string line in split)
+            {
+                if (line == "")
+                {
+                    reachedSplit = true;
+                } else
+                {
+                    if (reachedSplit)
+                    {
+                        changes.Add(line);
+                    }
+                    else
+                    {
+                        initial.Add(line);
+                    }
+                }
+            }
+
+            Stack<char>[] stacks = new Stack<char>[9];
+            for (int i=0; i<stacks.Length; i++)
+            {
+                stacks[i] = new Stack<char>();
+            }
+
+            initial.RemoveAt(initial.Count - 1);
+
+            initial.Reverse();
+            foreach (string line in initial)
+            {
+                string crate = line;
+                int currentStack = 0;
+
+                bool running = true;
+                while (running)
+                {
+                    if (crate[0] == '[')
+                    {
+                        stacks[currentStack].Push(crate[1]);
+                    }
+
+                    if (crate.Length == 3)
+                    {
+                        running = false;
+                    } else
+                    {
+                        crate = crate.Substring(4);
+                        currentStack++;
+                    }
+                }
+            }
+
+            foreach (Stack<char> stack in stacks)
+            {
+                foreach(char s in stack)
+                {
+                    Console.Write(s);
+                }
+
+                Console.WriteLine();
+            }
+            List<Rearrangement> moves = new List<Rearrangement>();
+
+            foreach (string s in changes)
+            {
+                moves.Add(new Rearrangement(s));
+            }
+
+            foreach (Rearrangement move in moves)
+            {
+                Console.WriteLine(move.ToString());
+                //for (int i = 0; i < move.repetitions; i++)
+                //{
+                //    char c = stacks[move.startPositionNumber - 1].First();
+                //    stacks[move.targetPositionNumber - 1].Push(c);
+                //    stacks[move.startPositionNumber - 1].Pop();
+                //}
+                List<char> crates = new List<char>();
+                for (int i = 0; i < move.repetitions; i++)
+                {
+                    crates.Add(stacks[move.startPositionNumber - 1].First());
+                    stacks[move.startPositionNumber - 1].Pop();
+                }
+                for (int i = 0; i < move.repetitions; i++)
+                {
+                    stacks[move.targetPositionNumber - 1].Push(crates[crates.Count-1]);
+                    crates.RemoveAt(crates.Count - 1);
+                }
+            }
+
+            foreach (Stack<char> stack in stacks)
+            {
+                if (stack.Count != 0)
+                {
+                    Console.Write(stack.First());
+                }
+                 
+            }
+
+
+        }
+
+        struct Rearrangement
+        {
+            public Rearrangement(string s)
+            {
+                repetitions = 0;
+                s = s.Substring(5);
+                while (char.IsDigit(s[0]))
+                {
+                    repetitions = repetitions * 10 + Convert.ToInt16(s[0].ToString());
+                    s = s.Substring(1);
+                }
+                
+                startPositionNumber = Convert.ToInt16(s[6].ToString());
+                targetPositionNumber = Convert.ToInt16(s[11].ToString());
+            }
+
+            public string ToString()
+            {
+                return $"{repetitions}, {startPositionNumber}, {targetPositionNumber}";
+            }
+
+            public int repetitions;
+            public int startPositionNumber;
+            public int targetPositionNumber;
+        }
+    }
+}
