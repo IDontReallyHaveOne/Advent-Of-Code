@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2022\\2022 day 8\\2022 day 8.csproj": {}
+    "c:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2022\\2022 day 8\\2022 day 8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2022\\2022 day 8\\2022 day 8.csproj": {
+    "c:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2022\\2022 day 8\\2022 day 8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2022\\2022 day 8\\2022 day 8.csproj",
+        "projectUniqueName": "c:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2022\\2022 day 8\\2022 day 8.csproj",
         "projectName": "2022 day 8",
-        "projectPath": "C:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2022\\2022 day 8\\2022 day 8.csproj",
+        "projectPath": "c:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2022\\2022 day 8\\2022 day 8.csproj",
         "packagesPath": "C:\\Users\\gstep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2022\\2022 day 8\\obj\\",
+        "outputPath": "c:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2022\\2022 day 8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gstep\\AppData\\Roaming\\NuGet\\NuGet.Config",

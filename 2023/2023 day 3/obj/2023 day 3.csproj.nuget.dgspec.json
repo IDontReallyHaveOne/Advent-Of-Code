@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2023\\2023 day 3\\2023 day 3.csproj": {}
+    "c:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2023\\2023 day 3\\2023 day 3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2023\\2023 day 3\\2023 day 3.csproj": {
+    "c:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2023\\2023 day 3\\2023 day 3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2023\\2023 day 3\\2023 day 3.csproj",
+        "projectUniqueName": "c:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2023\\2023 day 3\\2023 day 3.csproj",
         "projectName": "2023 day 3",
-        "projectPath": "C:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2023\\2023 day 3\\2023 day 3.csproj",
+        "projectPath": "c:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2023\\2023 day 3\\2023 day 3.csproj",
         "packagesPath": "C:\\Users\\gstep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2023\\2023 day 3\\obj\\",
+        "outputPath": "c:\\Users\\gstep\\OneDrive - Hills Road Sixth Form College\\Documents\\GitHub\\Advent-Of-Code\\2023\\2023 day 3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gstep\\AppData\\Roaming\\NuGet\\NuGet.Config",
