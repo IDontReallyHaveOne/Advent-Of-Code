@@ -1,0 +1,15 @@
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\bin\Debug\net8.0\2023 day 5 b.exe
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\bin\Debug\net8.0\2023 day 5 b.deps.json
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\bin\Debug\net8.0\2023 day 5 b.runtimeconfig.json
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\bin\Debug\net8.0\2023 day 5 b.dll
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\bin\Debug\net8.0\2023 day 5 b.pdb
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\obj\Debug\net8.0\2023 day 5 b.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\obj\Debug\net8.0\2023 day 5 b.AssemblyInfoInputs.cache
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\obj\Debug\net8.0\2023 day 5 b.AssemblyInfo.cs
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\obj\Debug\net8.0\2023 day 5 b.csproj.CoreCompileInputs.cache
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\obj\Debug\net8.0\2023 day 5 b.sourcelink.json
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\obj\Debug\net8.0\2023 day 5 b.dll
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\obj\Debug\net8.0\refint\2023 day 5 b.dll
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\obj\Debug\net8.0\2023 day 5 b.pdb
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\obj\Debug\net8.0\2023 day 5 b.genruntimeconfig.cache
+c:\Users\gstep\OneDrive - Hills Road Sixth Form College\Documents\GitHub\Advent-Of-Code\2023\2023 day 5 b\obj\Debug\net8.0\ref\2023 day 5 b.dll
