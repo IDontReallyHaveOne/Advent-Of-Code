@@ -39,32 +39,19 @@ namespace Day9
 
             foreach (Instruction instruction in instructions) {
                 for (int i = 0; i < instruction.repeats; i++) {
-                    if (instruction.direction == 'L') {
-                        head.Move(-Vector2.UnitX);
-                    } else if (instruction.direction == 'R') {
-                        head.Move(Vector2.UnitX);
-                    } else if (instruction.direction == 'U') {
-                        head.Move(Vector2.UnitY);
-                    } else if (instruction.direction == 'D') {
-                        head.Move(-Vector2.UnitY);
-                    }
+                    charDirections.TryGetValue(instruction.direction, out Vector2 moveVector);
+                    head.Move(moveVector);
 
-                    bool inList = false;
-                    foreach (Vector2 p in previousLocations) {
-                        if (p == tail.position) {
-                            inList = true;
-                        }
-                    }
-                    
-                    if (!inList) {
+                    if (!previousLocations.Contains(tail.position)) {
                         previousLocations.Add(tail.position);
                     }
                 }
             }
-            
-            Console.WriteLine(head);
+
             Console.WriteLine(previousLocations.Count);
         }
+
+        static Dictionary<char, Vector2> charDirections = new() {{'L', -Vector2.UnitX}, {'R', Vector2.UnitX}, {'U', Vector2.UnitY}, {'D', -Vector2.UnitY}};
 
         class Position{
             public Position(int x, int y) {
@@ -90,90 +77,8 @@ namespace Day9
 
             public override void Move(Vector2 move) {
                 base.Move(move);
-
-
-                if (this.position.X - child.position.X == 2) {
-                    switch (this.position.Y - child.position.Y) {
-                        case 0:
-                            child.Move(Vector2.UnitX);
-                            break;
-                        case 1:
-                            child.Move(Vector2.UnitX + Vector2.UnitY);
-                            break;
-                        case 2:
-                            child.Move(Vector2.UnitX + Vector2.UnitY);
-                            break;
-                        case -1:
-                            child.Move(Vector2.UnitX - Vector2.UnitY);
-                            break;
-                        case -2:
-                            child.Move(Vector2.UnitX - Vector2.UnitY);
-                            break;
-                        default:
-                            throw new Exception("sefio");
-                    }
-                } else if (this.position.X - child.position.X == -2) {
-                    switch (this.position.Y - child.position.Y) {
-                        case 0:
-                            child.Move(-Vector2.UnitX);
-                            break;
-                        case 1:
-                            child.Move(-Vector2.UnitX + Vector2.UnitY);
-                            break;
-                        case 2:
-                            child.Move(-Vector2.UnitX + Vector2.UnitY);
-                            break;
-                        case -1:
-                            child.Move(-Vector2.UnitX - Vector2.UnitY);
-                            break;
-                        case -2:
-                            child.Move(-Vector2.UnitX - Vector2.UnitY);
-                            break;
-                        default:
-                            throw new Exception("sefio");
-                    }
-                }
-
-                if (this.position.Y - child.position.Y == 2) {
-                    switch (this.position.X - child.position.X) {
-                        case 0:
-                            child.Move(Vector2.UnitY);
-                            break;
-                        case 1:
-                            child.Move(Vector2.UnitY + Vector2.UnitX);
-                            break;
-                        case 2:
-                            child.Move(Vector2.UnitY + Vector2.UnitX);
-                            break;
-                        case -1:
-                            child.Move(Vector2.UnitY - Vector2.UnitX);
-                            break;
-                        case -2:
-                            child.Move(Vector2.UnitY - Vector2.UnitX);
-                            break;
-                        default:
-                            throw new Exception("sefio");
-                    }
-                } else if (this.position.Y - child.position.Y == -2) {
-                    switch (this.position.X - child.position.X) {
-                        case 0:
-                            child.Move(-Vector2.UnitY);
-                            break;
-                        case 1:
-                            child.Move(-Vector2.UnitY + Vector2.UnitX);
-                            break;
-                        case 2:
-                            child.Move(-Vector2.UnitY + Vector2.UnitX);
-                            break;
-                        case -1:
-                            child.Move(-Vector2.UnitY - Vector2.UnitX);
-                            break;
-                        case -2:
-                            child.Move(-Vector2.UnitY - Vector2.UnitX);
-                            break;
-                        default:
-                            throw new Exception("sefio");
-                    }
+                if ((this.position - child.position).LengthSquared() >= 4) {
+                    child.Move(new Vector2(Math.Sign(this.position.X - child.position.X), Math.Sign(this.position.Y - child.position.Y)));
                 }
             }
             public Position child {get; set;}
