@@ -49,6 +49,7 @@ namespace Day9
             }
 
             Console.WriteLine(previousLocations.Count);
+            Console.ReadKey();
         }
 
         static Dictionary<char, Vector2> charDirections = new() {{'L', -Vector2.UnitX}, {'R', Vector2.UnitX}, {'U', Vector2.UnitY}, {'D', -Vector2.UnitY}};
